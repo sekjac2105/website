@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Negotiations On Web Pages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="Jakob Ponce" name="creador">
+  <meta content="Negotationswebofpage" name="empresa">
+
+  <!-- Logo -->
+  <link href="img/lg.jpg" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS archivo -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Librerias CSS archivos -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Menu estilos -->
+  <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/funcion.js"></script>
+    </head>
+    <body>
+<body>
+ <header>
+      <input id="toggler" class="toggler" type="checkbox">
+      <label for="toggler" class="burger">
+        <span><i class="fa fa-bars"></i></span>
+      </label>
+      <nav>
+        <ul>
+         <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="form.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+    </body>
+    <style>
+     
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+    padding: 18px;
+     direction: rtl
+   display:flex;
+}
+
+.toggler {
+  display: none;
+}
+
+
+
+.logo {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  margin-left: 16px;
+}
+
+nav ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  background: #585858;
+  left: -100%;
+  transition: all .5s;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+  text-transform: uppercase;
+  
+}
+
+nav a:hover {
+  color: rgb(91, 180, 253);
+  transition: ease-in .1s;
+}
+
+.toggler:checked ~ nav ul {
+  left: 0;
+}
+
+.burger {
+  position: absolute;
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(31, 31, 31);
+  top: 0;
+  right: 0;
+  margin-right: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.toggler:checked ~ nav a {
+  opacity: 1;
+}
+
+
+/* Desktop Screen Format */
+
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(700px, 3fr);
+  }
+
+  nav {
+    
+    display: flex;
+    grid-column: 3/4;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    all: unset;
+    list-style: none;
+    display: flex;
+    
+  }
+
+  nav li {
+    margin-bottom: 0;
+    margin-right: 16px;
+    
+  }
+
+  nav a {
+    opacity: 1;
+  }
+
+}
+        body{
+            background: aliceblue;
+        }
+    </style>
+    <body>
+    
+      <section class="wow fadeInUp">
+  <h1 style="padding-top: 90px;
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;">Nuestros Planes </h1>
+    <div>
+        <p style="text-align: center;font-size: 1.4rem;font-family: sans-serif;">Si dispones ya sea de una empresa ,Local o Kiosco aqui podras tener muchos mas informacion acerca de cada uno de estas opciones que te brindamos para mejorar la experiencia de cada uno de nuestros clientes , Soluciones tecnológicas empresariales enfocadas a la productividad y a la generación de nuevas oportunidades de negocios,locales o kioscos</p></div>
+   <div class="container__cards">
+
+        <div class="card">
+
+            <h4 class="card__header">Empresas Privadas</h4>
+            <div class="card__cover c1">
+                <img loading="lazy" src="img/empresa1.jpg" alt="">
+            </div>
+
+            <div class="specifications">
+                <h2>Beneficios</h2>
+                <h3>Eliges <font>Garantia de Satisfaccion Total</font>
+                </h3>
+                <hr>
+                <h3>Seguridad <font>Altos Estandares</font>
+                </h3>
+                <hr>
+                <h3>Servicio al clientes <font>24/7</font>
+                </h3>
+                <hr>
+                <h3>Garantia<font> 1 año totalmente</font>
+                </h3>
+                <hr>
+                <h3>Servicio <font>Internacional</font>
+                </h3>
+
+            </div>
+        </div>
+
+        <div class="card">
+
+            <h4 class="card__header">Negocios Propios</h4>
+            <div class="card__cover c2">
+                <img loading="lazy" src="img/empresa2.jpg" alt="">
+            </div>
+
+            <div class="specifications">
+                <h2>Beneficios</h2>
+                <h3>Expansion  <font>Solo Provincial</font>
+                </h3>
+                <hr>
+                <h3>Publicidad<font> Principales Redes Sociales</font>
+                </h3>
+                <hr>
+                <h3>Servicio <font>Bussines</font>
+                </h3>
+                <hr>
+                <h3>Tiempo De finalizacion<font>30 dias</font>
+                </h3>
+                <hr>
+                <h3>Carga<font> Realizamos sitios para carga rapida</font>
+                </h3>
+
+            </div>
+        </div>
+
+        <div class="card">
+
+            <h4 class="card__header">Insumos medicos</h4>
+            <div class="card__cover c3">
+                <img loading="lazy" src="img/farma.jpg" alt="">
+            </div>
+
+            <div class="specifications">
+                <h2>Beneficios</h2>
+                <h3>Expansion <font>Solo Provincial</font>
+                </h3>
+                <hr>
+                <h3>Publicidad<font> Principales Redes Sociales</font>
+                </h3>
+                <hr>
+                <h3>Certificado <font>SSL</font>
+                </h3>
+                <hr>
+                <h3>Velocidad <font> Rapida de Carga</font>
+                </h3>
+                <hr>
+                <h3>Informacion <font> De los Ultimos Medicamentos</font>
+                </h3>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+    
+    <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Negotiations On Web Pages</strong>. Todos los Derechos reservados
+          </div>
+          <div class="credits">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    </body>
+  
+</html>

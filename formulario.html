@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div>
+   <header class="header">
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#hero">Inicio</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#services">Servicios</a></li>
+    <li><a href="ofertas.html">Ofertas</a></li>
+    <li><a href="#contact">Productos</a></li>
+    <li><a href="formulario.html">Contactos</a></li>
+    
+  </ul>
+      </header>
+    </div>
+    <style>
+        body{
+    margin: 0px;
+    background: #d1d1d1;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+    margin: 2px;
+  padding: 14px 20px 2px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+        body{
+            background-color: #fff;
+        }
+    </style>
+ <section class="form">
+    
+    <div class="contenedor">
+
+        <h1>Formulario Contacto</h1>
+
+        <div class="contenido">
+
+            <div class="info">
+
+                <div class="col">
+                    <i class="icono fas fa-map-marker-alt"></i>
+                    <p>Av. 26 de julio Nro. 8 Ciudad - País</p>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-envelope"></i>
+                    <p>consulta@correo.com</p>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-phone"></i>
+                    <p>(01) 6262-222 <br> (01) 3343-543</p>
+                </div>
+
+                <div class="redes-s">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+
+                <form action="enviado.html" method="GET" class="formulario">
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input type="text" name="correo" placeholder="Correo electróico" id="correo">
+                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <button type="button" onclick="validarFormulario()" >Enviar</button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
